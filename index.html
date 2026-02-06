@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del Fogón — Productos Caseros</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVEGACIÓN
+       Barra fija superior con logo, links y CTA.
+       Se le agrega .scrolled via JS al hacer scroll.
+       ════════════════════════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">🍯</span>
+      Del Fogón
+    </a>
+    <ul class="nav-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto" class="nav-cta">Hacer Pedido</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════
+       HERO
+       Sección principal con titular, descripción,
+       botones de acción, estadísticas y visual circular.
+       Los blobs son formas decorativas con blur.
+       ════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">🌿 100% Artesanal</div>
+        <h1>Sabor de hogar, <em>directo a tu mesa</em></h1>
+        <p class="hero-desc">Elaboramos cada producto con recetas familiares, ingredientes naturales y el cariño de lo hecho a mano. Sin conservantes, sin apuros, solo sabor auténtico.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn-primary">Ver Productos →</a>
+          <a href="#historia" class="btn-secondary">Nuestra Historia</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3>500+</h3>
+            <p>Clientes felices</p>
+          </div>
+          <div class="hero-stat">
+            <h3>100%</h3>
+            <p>Ingredientes naturales</p>
+          </div>
+          <div class="hero-stat">
+            <h3>12</h3>
+            <p>Recetas artesanales</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <span class="placeholder-art">🫙</span>
+        </div>
+        <div class="floating-card fc-1">
+          <span class="fc-icon">🍓</span>
+          <div><strong>Mermeladas</strong><br><small style="color:var(--text-light)">Fruta de estación</small></div>
+        </div>
+        <div class="floating-card fc-2">
+          <span class="fc-icon">⭐</span>
+          <div><strong>4.9 / 5</strong><br><small style="color:var(--text-light)">Calificación</small></div>
+        </div>
+        <div class="floating-card fc-3">
+          <span class="fc-icon">🚚</span>
+          <div><strong>Envío</strong><br><small style="color:var(--text-light)">A todo el país</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       PRODUCTOS
+       Grid de 6 tarjetas con imagen placeholder (emoji),
+       nombre, descripción, precio y botón agregar.
+       Cada tarjeta tiene .reveal para animarse al scroll.
+       ════════════════════════════════════════════════ -->
+  <section class="products" id="productos">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label">Nuestros Productos</span>
+        <h2 class="section-title">Hechos con amor, listos para disfrutar</h2>
+        <p class="section-subtitle">Cada frasco y cada paquete lleva el sello de lo casero. Ingredientes seleccionados, recetas tradicionales y un sabor que no encontrás en otro lado.</p>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-img">
+            <span class="product-tag">Popular</span>
+            🍓
+          </div>
+          <div class="product-body">
+            <h3>Mermelada de Frutilla</h3>
+            <p class="product-desc">Frutillas frescas de estación con un toque justo de dulzura. Ideal para tostadas y desayunos.</p>
+            <div class="product-footer">
+              <span class="product-price">$2.500</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-img">
+            🫒
+          </div>
+          <div class="product-body">
+            <h3>Escabeche de Verduras</h3>
+            <p class="product-desc">Mix de berenjenas, morrones y zanahorias en aceite de oliva con especias caseras.</p>
+            <div class="product-footer">
+              <span class="product-price">$3.200</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-img">
+            <span class="product-tag">Nuevo</span>
+            🌶️
+          </div>
+          <div class="product-body">
+            <h3>Salsa Criolla Picante</h3>
+            <p class="product-desc">Nuestra receta de familia con tomate, cebolla y un toque de ají que levanta cualquier plato.</p>
+            <div class="product-footer">
+              <span class="product-price">$1.800</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-4">
+          <div class="product-img">
+            🍯
+          </div>
+          <div class="product-body">
+            <h3>Miel Pura de Campo</h3>
+            <p class="product-desc">Miel multifloral sin procesar, directa del apiario. Cremosa y con aroma a naturaleza.</p>
+            <div class="product-footer">
+              <span class="product-price">$4.500</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-5">
+          <div class="product-img">
+            🫐
+          </div>
+          <div class="product-body">
+            <h3>Dulce de Arándanos</h3>
+            <p class="product-desc">Arándanos seleccionados, cocción lenta y sin conservantes. Un sabor intenso y natural.</p>
+            <div class="product-footer">
+              <span class="product-price">$3.000</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card reveal reveal-delay-6">
+          <div class="product-img">
+            <span class="product-tag">Edición limitada</span>
+            🌿
+          </div>
+          <div class="product-body">
+            <h3>Pesto Casero</h3>
+            <p class="product-desc">Albahaca fresca del huerto, parmesano rallado, nueces y aceite de oliva. Listo para la pasta.</p>
+            <div class="product-footer">
+              <span class="product-price">$2.800</span>
+              <button class="product-btn" aria-label="Agregar al carrito">+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       POR QUÉ ELEGIRNOS
+       4 tarjetas con ícono, título y descripción.
+       Efecto hover: fondo blanco + sombra + elevación.
+       ════════════════════════════════════════════════ -->
+  <section class="why-us" id="nosotros">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label">¿Por qué elegirnos?</span>
+        <h2 class="section-title">Lo que nos hace diferentes</h2>
+        <p class="section-subtitle">No somos una fábrica, somos una cocina con historia. Cada detalle importa.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon">🌱</div>
+          <h3>Ingredientes Naturales</h3>
+          <p>Seleccionamos cada ingrediente a mano. Sin conservantes artificiales, sin colorantes, sin atajos.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon">👩‍🍳</div>
+          <h3>Recetas Familiares</h3>
+          <p>Tradiciones que pasan de generación en generación. El sabor de la abuela en cada bocado.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon">📦</div>
+          <h3>Envío Cuidado</h3>
+          <p>Empacamos con mimo para que todo llegue perfecto a tu puerta, donde sea que estés.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-4">
+          <div class="why-icon">💛</div>
+          <h3>Hecho con Amor</h3>
+          <p>Cada lote es pequeño y personal. Producimos con dedicación, no en serie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       NUESTRA HISTORIA
+       Layout 2 columnas: visual + texto.
+       Fondo oscuro (brown-dark) para contraste.
+       ════════════════════════════════════════════════ -->
+  <section class="story" id="historia">
+    <div class="section-container">
+      <div class="story-grid">
+        <div class="story-visual reveal">
+          <span class="placeholder-art">👩‍🍳</span>
+        </div>
+        <div class="story-text">
+          <span class="section-label reveal">Nuestra Historia</span>
+          <h2 class="section-title reveal">De la cocina de mamá al país entero</h2>
+          <p class="reveal">Todo empezó con una receta de mermelada que mi abuela preparaba cada verano. El aroma llenaba la casa y los vecinos siempre pedían un frasco. Lo que fue un hobby familiar se convirtió en un proyecto con alma.</p>
+          <p class="reveal">Hoy seguimos cocinando en tandas pequeñas, eligiendo la mejor fruta de estación y respetando los tiempos de cada preparación. Porque lo bueno lleva su tiempo.</p>
+          <div class="story-quote reveal">
+            <p>"La mejor receta es la que se hace con paciencia y se comparte con cariño."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       TESTIMONIOS
+       3 tarjetas con estrellas, cita y datos del autor.
+       ════════════════════════════════════════════════ -->
+  <section class="testimonials" id="opiniones">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label">Opiniones</span>
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <p class="section-subtitle">Nada nos hace más felices que saber que nuestros productos alegran mesas y momentos.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"La mermelada de frutilla es increíble. Se nota que es casera de verdad, no tiene comparación con las del supermercado. Ya pedí la tercera vez."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ML</div>
+            <div>
+              <strong>María López</strong>
+              <span>Cliente desde 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Pedí el combo para regalar y fue un éxito. El packaging es hermoso y el sabor espectacular. La salsa criolla es adictiva."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CR</div>
+            <div>
+              <strong>Carlos Ramírez</strong>
+              <span>Cliente desde 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"La miel es de otro planeta. Se nota la calidad desde que abrís el frasco. Mis chicos la devoran en las tostadas del desayuno."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AG</div>
+            <div>
+              <strong>Ana García</strong>
+              <span>Cliente desde 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       CTA FINAL
+       Caja terracotta con input de WhatsApp.
+       La función handleCTA() está en main.js.
+       ════════════════════════════════════════════════ -->
+  <section class="cta-section" id="contacto">
+    <div class="cta-box reveal">
+      <h2 class="section-title">¿Querés probar lo casero de verdad?</h2>
+      <p>Dejanos tu WhatsApp y te mandamos el catálogo completo con precios y opciones de envío. Sin compromiso.</p>
+      <div class="cta-form">
+        <input type="tel" placeholder="Tu número de WhatsApp" aria-label="Número de WhatsApp">
+        <button type="button" onclick="handleCTA()">Quiero el catálogo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+       4 columnas: marca, productos, empresa, contacto.
+       Barra inferior con copyright y links legales.
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">🍯</span>
+          Del Fogón
+        </a>
+        <p>Productos alimenticios caseros elaborados con recetas familiares e ingredientes naturales.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#">Mermeladas</a></li>
+          <li><a href="#">Salsas</a></li>
+          <li><a href="#">Escabeches</a></li>
+          <li><a href="#">Miel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#historia">Nuestra Historia</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Puntos de Venta</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">hola@delfogon.com</a></li>
+          <li><a href="#">+54 9 261 XXX XXXX</a></li>
+          <li><a href="#">Mendoza, Argentina</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Del Fogón. Todos los derechos reservados.</p>
+      <div>
+        <a href="#">Términos</a> · <a href="#">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
