@@ -61,3 +61,13 @@ La página se adapta perfectamente a:
 ## 📝 Autor
 
 Proyecto de taller para aprender **Git y Github**
+
+#CHAT BOT
+Agregue un fichero que contiene la funcion en js del gotBotReplay, con las respuestas determinadas.
+En html agregue un widget tipo burbuja quepermite interactura con el chet bot, al hacer click en el icono 💬 se abre el chat.
+La primera apertura despliega tres botones de sugerencia:
+Sabores disponibles  |  Zona de entrega  |  Formas de pago
+Pulsar cualquiera de ellos envía la consulta correspondiente y el bot responde con la información prevista.
+También puedes escribir libremente; las respuestas nuevas son activadas por las palabras clave indicadas.
+
+
